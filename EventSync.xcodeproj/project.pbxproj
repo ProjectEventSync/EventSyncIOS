@@ -12,6 +12,7 @@
 		D654D5362B708E5900A2040F /* NeutralColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D654D5352B708E5900A2040F /* NeutralColors.swift */; };
 		D654D5382B70959E00A2040F /* PrimaryColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D654D5372B70959E00A2040F /* PrimaryColors.swift */; };
 		D654D53A2B714C0000A2040F /* meetupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D654D5392B714C0000A2040F /* meetupModel.swift */; };
+		D654D53C2B71730B00A2040F /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D654D53B2B71730B00A2040F /* Signup.swift */; };
 		D6B401C32B6EB01F00845F38 /* EventSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B401C22B6EB01F00845F38 /* EventSyncApp.swift */; };
 		D6B401C52B6EB01F00845F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B401C42B6EB01F00845F38 /* ContentView.swift */; };
 		D6B401C72B6EB02200845F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B401C62B6EB02200845F38 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		D654D5352B708E5900A2040F /* NeutralColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralColors.swift; sourceTree = "<group>"; };
 		D654D5372B70959E00A2040F /* PrimaryColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryColors.swift; sourceTree = "<group>"; };
 		D654D5392B714C0000A2040F /* meetupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meetupModel.swift; sourceTree = "<group>"; };
+		D654D53B2B71730B00A2040F /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		D6B401BF2B6EB01F00845F38 /* EventSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B401C22B6EB01F00845F38 /* EventSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSyncApp.swift; sourceTree = "<group>"; };
 		D6B401C42B6EB01F00845F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				D654D5302B70839B00A2040F /* Login.swift */,
 				D654D5322B70848000A2040F /* MeetupCard.swift */,
+				D654D53B2B71730B00A2040F /* Signup.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				D654D5382B70959E00A2040F /* PrimaryColors.swift in Sources */,
 				D654D5332B70848000A2040F /* MeetupCard.swift in Sources */,
 				D6B401C52B6EB01F00845F38 /* ContentView.swift in Sources */,
+				D654D53C2B71730B00A2040F /* Signup.swift in Sources */,
 				D6B401C32B6EB01F00845F38 /* EventSyncApp.swift in Sources */,
 				D654D53A2B714C0000A2040F /* meetupModel.swift in Sources */,
 			);

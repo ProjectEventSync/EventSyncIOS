@@ -19,4 +19,6 @@ enum NeutralColors: String {
     case gray800
     case gray900
     case gray950
+    case cWhite
+    case cBlack
 }
