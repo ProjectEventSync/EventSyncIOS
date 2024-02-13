@@ -1,7 +1,8 @@
 import SwiftUI
 
-struct MeetupCard: View {
+struct MeetupCard: View, Identifiable {
     @Environment(\.colorScheme) var colorScheme
+    var id : Int
     var body: some View {
         VStack {
             HStack {
@@ -44,7 +45,7 @@ struct MeetupCard: View {
                                     .foregroundColor(.gray400)
                                 
                                 Text("3")
-                                        .font(.system(size: 9, weight: .semibold))
+                                        .font(.system(size: 10, weight: .semibold))
                                         .foregroundColor(colorScheme == .dark ? .gray300 : .gray500)
                                     
                                     
@@ -68,7 +69,7 @@ struct MeetupCard: View {
                                         .foregroundColor(.gray400)
                                     
                                     Text("8:00 AM")
-                                        .font(.system(size: 9, weight: .semibold))
+                                        .font(.system(size: 10, weight: .semibold))
                                         .foregroundColor(colorScheme == .dark ? .gray300 : .gray500)
                                     
                                 }.padding(5)
@@ -91,7 +92,7 @@ struct MeetupCard: View {
                                     
                                     
                                     Text("2/14/23")
-                                        .font(.system(size: 9, weight: .semibold))
+                                        .font(.system(size: 10, weight: .semibold))
                                         .foregroundColor(colorScheme == .dark ? .gray300 : .gray500)
                                     
                                 }.padding(5)
@@ -110,24 +111,21 @@ struct MeetupCard: View {
                         
                     }
             }
-            .frame(width: 320, height: 100)
+            .frame(width: .infinity, height: 100)
             .padding()
         }
         .cornerRadius(10.0)
         .background(RoundedRectangle(cornerRadius: 8)
-            .fill(colorScheme == .dark ? .gray900 : .gray50)
+            .fill(colorScheme == .dark ? .gray900 : .white)
                     
             
         )
-        .overlay( /// apply a rounded border
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(colorScheme == .dark ? .gray700 : .gray200, lineWidth: 1)
-            )
+        
         
     }
     
 }
 
 #Preview {
-    MeetupCard()
+    MeetupCard(id: 1)
 }

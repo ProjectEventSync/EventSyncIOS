@@ -14,9 +14,11 @@ struct Login: View {
     
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading) {
+            VStack {
+               
                 Text("Login")
-                    .font(.system(size:25, weight: .bold))
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                 
                 HStack {
                     Text("Don't have an account?")
@@ -31,6 +33,7 @@ struct Login: View {
                             .foregroundColor(.blue500)
                     }
                 }
+                
                 
                 Spacer()
                 
@@ -76,25 +79,28 @@ struct Login: View {
                 
                 Spacer()
                 
-                Button(action: login){
-                    Text("Login")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(.gray100)
-                    
+                NavigationLink(destination: Home()) {
+                    Button(action: {}){
+                        Text("Login")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundColor(.gray100)
+                    }
+                    .cornerRadius(10.0)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 8)
+                        .fill(.blue600)
+                                
+                    )
                 }
-                .cornerRadius(10.0)
-                .frame(width: 290, height: 25)
-                .padding()
-                .background(RoundedRectangle(cornerRadius: 8)
-                    .fill(.blue600)
-                    
-                )
+               
+                
                 
             }
-            .frame(width: 320, height: 250)
+            .frame(height: 250)
             .padding()
             
         }
+        
     }
 }
 
